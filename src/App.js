@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch,Redirect} from "react-router-dom";
 
 import Index from "./pages/main";
 
+import './App.scss';
 class App extends Component {
     render() {
         return (
