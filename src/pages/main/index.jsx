@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.sass'
 
 import Header from "../../components/header";
+import StudentSlide from "../studentSlide";
 
 
 class Index extends Component {
@@ -13,18 +14,9 @@ class Index extends Component {
                 <Header/>
                 <div className={'home-container'}>
                     <div className={'spliter'}></div>
-                    <Container>
+                    <Container className={'sm-blur-front'}>
                         <Row className={'home-into mt-600'}>
-                            <Col md={{ span: 4, offset: 8 }}>Socially enabling</Col>
-                        </Row>
-                        <Row className={'home-into'}>
-                            <Col md={{ span: 4, offset: 8 }}>micro-internships to</Col>
-                        </Row>
-                        <Row className={'home-into'}>
-                            <Col md={{ span: 6, offset: 8 }}>foster economic innovation</Col>
-                        </Row>
-                        <Row className={'home-into'}>
-                            <Col md={{ span: 4, offset: 8 }}>in every community </Col>
+                            <Col md={{ span: 4, offset: 7 }}>Socially enabling micro-internships to foster economic innovation in every community</Col>
                         </Row>
                         <Form.Row className={'mt-5'}>
                             <Col md={{span: 4,offset:6}} >
@@ -38,6 +30,16 @@ class Index extends Component {
                         </Form.Row>
                     </Container>
                 </div>
+                <Container fluid={true} className={'slide-container'} >
+                    <Row>
+                        <Col md={{offset:2}}>
+                            <div className={'slide-title'}>
+                                So How Does It Work?
+                            </div>
+                            <div className={'student-slide-title'}>Student</div>
+                        </Col>
+                    </Row>
+                </Container>
             </>
         );
     }
