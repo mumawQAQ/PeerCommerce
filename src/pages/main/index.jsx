@@ -30,16 +30,7 @@ class Index extends Component {
                         </Form.Row>
                     </Container>
                 </div>
-                <Container fluid={true} className={'slide-container'} >
-                    <Row>
-                        <Col md={{offset:2}}>
-                            <div className={'slide-title'}>
-                                So How Does It Work?
-                            </div>
-                            <div className={'student-slide-title'}>Student</div>
-                        </Col>
-                    </Row>
-                </Container>
+                <StudentSlide/>
             </>
         );
     }
